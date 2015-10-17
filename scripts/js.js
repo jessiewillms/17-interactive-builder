@@ -1,4 +1,6 @@
-var app = {};
+var app = {
+	content: ""
+};
 
 app.init = function() {
 	var hed, intro1, intro2, intro3;
@@ -15,14 +17,15 @@ app.init = function() {
 		intro2 	= '<li>' + $('.intro2').val() + '</li>',
 		intro3 	= '<li>' + $('.intro3').val() + '</li>';
 
-		var content =  '<header>' + hed  + dek + '</header>' + image + '<ul>' + intro1 + intro2 + intro3 + '</ul>';
-		$('.wrap').html(content);
+		app.content =  '<header>' + hed  + dek + '</header>' + image + '<ul>' + intro1 + intro2 + intro3 + '</ul>';
+		$('.wrap').html(app.content);
 		
 	})
 };
 
 $('.compile').on('click',function(){
 
+	var iframe = '<iframe frameborder="0" title="Features " id="myIframe9034" src="http://projects.thestar.com/poll-tracker/PollTrackerVersion4.html" scrolling="no"></iframe>';
 });
 
 $(function() {
