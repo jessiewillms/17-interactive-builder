@@ -10,48 +10,64 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="styles/styles.css" />
 
-
-
     <body>
         <div class="wrapper">
             <form>
                 <div class="wrap-input">
-                    <label>hed 0</label>
-                    <input type="text" class="hed">
-
-                    <label>dek 0</label>
-                    <input type="text" class="dek">
-                </div>
-                <!-- intro -->
-                <div class="wrap-input">
-                </div>
-                <label>intro 01</label>
-                <input type="text" class="intro1">
-                <div class="wrap-input">
-                    <label>intro 02</label>
-                    <input type="text" class="intro2">
-                    <label>intro 03</label>
-                    <input type="text" class="intro3">
-                </div>
-                <div class="wrap-input">
-                    <label>intro 02</label>
-                    <input type="text" class="intro2">
-                    <label>intro 03</label>
-                    <input type="text" class="intro3">
+                    <!-- <label>Small label</label> -->
+                    <input type="text" class="hed" value="Add a small label">
+                    <!-- <label>Headline</label> -->
+                    <input type="text" class="dek" value="Add a dek">
+                    <!-- <label>Intro text</label> -->
+                    <input type="text" class="intro" value="Add an intro">
                 </div>
 
+                <div class="wrap-input">
+                    <!-- <label>Three text boxes</label> -->
+                    <input type="text" class="txt1">
+                    <!-- <label>Three text boxes</label> -->
+                    <input type="text" class="txt2">
+                    <!-- <label>Three text boxes</label> -->
+                    <input type="text" class="txt3">
+                </div>
+
+                <div class="wrap-input">
+                    <label>Three text boxes</label>
+                    <!-- <input type="text" class="txt4"> -->
+                    <label>Three text boxes</label>
+                    <!-- <input type="text" class="txt5"> -->
+                    <label>Three text boxes</label>
+                    <!-- <input type="text" class="txt6"> -->
+                </div>
                 <button class="submit">submit</button>
             </form>
-            <section class="wrap">
-                <header>
-                    <h1></h1>
+            <section class="wrap" id="wrap-id">
+                <header class="cf">
+                    <div class="inner-wrap">
+                        <div class="img-wrap">
+                            <img src="images/jays.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="inner-wrap">
+                        <p class="intro">The starters</p>
+                        <h1>Andew Wiggins</h1>
+                        <p class="dek">With all the talent we’ve got, I believe we’re the best team.” – on the upcoming FIBA Americas competition</p>
+                    </div>
                 </header>
+                <ul class="text-wrap cf">
+                    <li>Charles Barkley and Karl Malone. </li>
+                    <li>The next year at the 1984</li>
+                    <li>Canada lost the bronze-medal  </li>
+                </ul>
+                <ul class="text-wrap cf stats">
+                    <li><span>5% </span>the Triano, was captained</li>
+                    <li><span>21% </span>als to France, by five points</li>
+                    <li><span>$320 </span>cost of 2004 Olympics </li>
+                </ul>
             </section>
-
             <section class="output">
                 <button class="compile">compile</button>
             </section>
-
             <section class="iframe"></section>
         </div>
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>

@@ -21,11 +21,14 @@ img {
   display: table;
   clear: both; }
 
-.wrap-input {
-  margin: 5px 0; }
+.wrap-input input {
+  display: block;
+  width: 100%;
+  margin: 10px 0;
+  padding: 3px;
+  color: #a1a1a1; }
 
 section {
-  width: 100%;
   padding: 10px;
   border: 1px solid #eee; }
 
@@ -34,4 +37,50 @@ img {
 
 .submit {
   width: 100%;
-  display: block; }
+  display: block;
+  margin: 10px 0; }
+
+.wrap {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #eee; }
+  .wrap .inner-wrap {
+    float: left;
+    padding: 5px; }
+    .wrap .inner-wrap:nth-of-type(1) {
+      max-width: 25%; }
+    .wrap .inner-wrap:nth-of-type(2) {
+      max-width: 75%; }
+    .wrap .inner-wrap .img-wrap {
+      height: 125px;
+      overflow: hidden; }
+  .wrap header {
+    width: 100%; }
+    .wrap header h1 {
+      color: #333;
+      margin: 0; }
+    .wrap header p {
+      color: #4d4d4d; }
+    .wrap header .intro {
+      color: #666666;
+      margin: 0; }
+    .wrap header img {
+      float: left;
+      padding: 5px; }
+  .wrap li:nth-of-type(2),
+  .wrap li:nth-of-type(3) {
+    border-left: 1px solid #eee; }
+  .wrap ul.text-wrap {
+    width: 100%;
+    padding: 10px 5px;
+    border-bottom: 1px solid #eee; }
+    .wrap ul.text-wrap li {
+      width: 33.33333%;
+      list-style-type: none;
+      float: left;
+      padding: 5px; }
+    .wrap ul.text-wrap.stats li span {
+      color: #16a085;
+      display: block;
+      font-size: 1.65em;
+      font-weight: 600; }
