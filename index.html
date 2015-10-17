@@ -4,18 +4,86 @@
 <head>
     <meta charset="UTF-8">
     <title>Toronto Star</title>
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700|Raleway:400,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Yeseva+One' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="http://necolas.github.io/normalize.css/3.0.2/normalize.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="styles/styles.css" />
 
+
+
     <body>
         <div class="wrapper">
-            <section class="wrap"></section>
+            <form>
+                <div class="wrap-input">
+                    <label>hed 0</label>
+                    <input type="text" class="hed">
+
+                    <label>dek 0</label>
+                    <input type="text" class="dek">
+                </div>
+                <!-- intro -->
+                <div class="wrap-input">
+                </div>
+                <label>intro 01</label>
+                <input type="text" class="intro1">
+                <div class="wrap-input">
+                    <label>intro 02</label>
+                    <input type="text" class="intro2">
+                    <label>intro 03</label>
+                    <input type="text" class="intro3">
+                </div>
+                <div class="wrap-input">
+                    <label>intro 02</label>
+                    <input type="text" class="intro2">
+                    <label>intro 03</label>
+                    <input type="text" class="intro3">
+                </div>
+
+                <button class="submit">submit</button>
+            </form>
+            <section class="wrap">
+                <header>
+                    <h1></h1>
+                    <!-- <img src="images/jays.jpg" alt=""> -->
+                </header>
+            </section>
+
+            <section class="output">
+                <button class="compile">compile</button>
+            </section>
         </div>
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script src="scripts/vendor/dropzone.js"></script>
         <script src="scripts/js.js"></script>
-        <script src="https://spreadsheets.google.com/feeds/list/ KEY /1/public/values?alt=json-in-script&callback=getJson"></script>
     </body>
 
 </html>
+<!-- 
+                <label for="text">dek</label>
+                <input type="text" class="dek">
+
+                <label for="image">stat1</label>
+                <input type="text" class="key-stat1">
+                
+                <label for="image">stat2</label>
+                <input type="text" class="key-stat2">
+                
+                <label for="image">stat3</label>
+                <input type="text" class="key-stat3">
+                
+                <label for="image">stat4</label>
+                <input type="text" class="key-stat4">
+                
+                <label for="image">stat1</label>
+                <input type="text" class="key-stat5">
+                <div id="myId">drop</div>
+
+
+
+// $(document).ready(function() {
+//   $('#hit').click(function() {
+//     alert($('#term').val());
+//   });
+// });
+                 -->

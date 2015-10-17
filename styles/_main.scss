@@ -15,19 +15,15 @@ img {
 }
 
 .wrapper {
-    max-width: 300px;
    	width: 100%;
     padding: 3px;
+    width: 540px;
+    display: block;
+    margin: 20px auto;
 }
 
 .cf:after {
   content: "";
   display: table;
   clear: both;
-}
-
-.active {
-	background-color: #E8E8E8;
-	color: $w;
-	transition: background-color 0.35s ease-in;
 }

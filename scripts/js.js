@@ -1,24 +1,29 @@
 var app = {};
 
 app.init = function() {
+	var hed, intro1, intro2, intro3;
 
-	function getJsonFromGoogle(json) {
+	$('.submit').click(function(e){
+		e.preventDefault();
+		console.log('hsdf')
+		
 
-	    var content = "";
-	    var currentdate;
+		hed = '<h1>' + $('.hed').val() + '</h1>',
+		dek = '<h2>' + $('.dek').val() + '</h2>',
+		image = '<div class="img-wrap"><img src="images/jays.jpg" alt=""></div>',
+		intro1 	= '<li>' + $('.intro1').val() + '</li>',
+		intro2 	= '<li>' + $('.intro2').val() + '</li>',
+		intro3 	= '<li>' + $('.intro3').val() + '</li>';
 
-	    h1 = json.feed.entry[0].gsx$h1.$t;
-
-	    for (var i = 0; i < json.feed.entry.length; i++) {
-	        entry = json.feed.entry[i];
-
-	        var copy = entry.gsx$copy.$t;
-
-	        content += '<div class="wrap">' +  + '</div>';
-	    }
-	    $('.wrapper').append(content);
-	};
+		var content =  '<header>' + hed  + dek + '</header>' + image + '<ul>' + intro1 + intro2 + intro3 + '</ul>';
+		$('.wrap').html(content);
+		
+	})
 };
+
+$('.compile').on('click',function(){
+
+});
 
 $(function() {
     app.init();

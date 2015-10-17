@@ -1,17 +1,15 @@
+// 'use strict';
+
 // Include gulp
 var gulp = require('gulp');
 
 // gulp-jshint gulp-sass gulp-concat gulp-uglify gulp-rename
-var jshint = require('gulp-jshint'),
-	sass = require('gulp-sass'),
-	concat = require('gulp-concat'),
-	uglify = require('gulp-uglify'),
-	rename = require('gulp-rename'),
-    s3 = require("gulp-s3-ls"),
-    aws = require("./aws.json");
+var jshint      = require('gulp-jshint'),
+	sass       = require('gulp-sass'),
+	concat     = require('gulp-concat'),
+	uglify     = require('gulp-uglify'),
+	rename     = require('gulp-rename');
 
-gulp.src('./dist/**')
-    .pipe(s3(aws));
 
 // Lint Task
 gulp.task('lint', function() {
