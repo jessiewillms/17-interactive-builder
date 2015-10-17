@@ -14,7 +14,7 @@ img {
   padding: 3px;
   width: 540px;
   display: block;
-  margin: 20px auto; }
+  margin: 2px auto; }
 
 .cf:after {
   content: "";
@@ -35,3 +35,9 @@ img {
 .submit {
   width: 100%;
   display: block; }
+
+.iframe {
+  width: 100%;
+  background: #f2f2f2;
+  height: 100px;
+  margin: 5px 0; }
