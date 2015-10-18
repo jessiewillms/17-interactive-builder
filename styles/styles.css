@@ -21,12 +21,17 @@ img {
   display: table;
   clear: both; }
 
-.wrap-input input {
+.wrap-input input:not(.col-3) {
   display: block;
   width: 100%;
   margin: 10px 0;
   padding: 3px;
   color: #a1a1a1; }
+
+.wrap-input.col-3 input {
+  width: 30%;
+  float: left;
+  margin-right: 1%; }
 
 section {
   padding: 10px;
