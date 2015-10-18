@@ -3,15 +3,15 @@ var app = {
 };
 
 app.init = function() {
-	$('input').click(function(){
-		$(this).val("")
-	})
+	// $('input').click(function(){
+	// 	$(this).val("")
+	// })
 	$('.submit').click(function(e){
 		e.preventDefault();
 
 		var hed = '<h1>' + $('.hed').val() + '</h1>',
 		intro = '<p class="intro">' + $('.intro').val() + '</p>',
-		dek = '<p class="dek">' + $('.dek').val() + '</p>',
+		label = '<p class="label">' + $('.label').val() + '</p>',
 		image = '<img src="images/jays.jpg" alt="">',
 
 		txt1 = '<li>' + $('.txt1').val() + '</li>',
@@ -26,7 +26,7 @@ app.init = function() {
 		span5 = '<span>' + $('.span5').val() + '</span>',
 		span6 = '<span>' + $('.span6').val() + '</span>';
 
-		var header = '<header class="cf"><div class="inner-wrap"><div class="img-wrap"> <img src="images/jays.jpg" alt=""> </div></div><div class="inner-wrap">' + hed + intro + dek + '</div></header>';
+		var header = '<header class="cf"><div class="inner-wrap"><div class="img-wrap"> <img src="images/jays.jpg" alt=""> </div></div><div class="inner-wrap">' + label + hed + intro + '</div></header>';
 
 		var ul = '<ul class="text-wrap cf">' + txt1 + txt2 + txt3 + '</ul>';
 
@@ -35,12 +35,15 @@ app.init = function() {
 
 		//compiles inputs to 
 		app.content =  '<section class="wrap" id="wrap-id">' + header + ul + ul_2 + '</section>';
-		$('.wrap').html(app.content);
+		$('.generated-card').html(app.content);
+
+		$('.preview').fadeOut();
 		
 	})
 };
 
 $('.compile').on('click',function(){
+	
 
 	var linkToCSS = '<link rel="stylesheet" href="http://jessiewillms.github.io/17-interactive-builder/styles/styles.css">';
 
@@ -48,7 +51,7 @@ $('.compile').on('click',function(){
 
 	var iframe = '<iframe frameborder="0" title="Features " id="myIframe9034" src="http://projects.thestar.com/poll-tracker/PollTrackerVersion4.html" scrolling="no"></iframe>';
 
-	var getHTML = document.getElementById("wrap-id").outerHTML.toString();
+	var getHTML = document.getElementById("generated-card-output").outerHTML.toString();
 
 	$('.iframe').text(linkToFont + linkToCSS + getHTML)
 
