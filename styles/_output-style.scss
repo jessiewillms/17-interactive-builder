@@ -27,6 +27,13 @@
         p {
             color: lighten($dg, 10)
         }
+        .label {
+        	text-transform: uppercase;
+        	letter-spacing: 2px;
+        	color: lighten($dg, 20);
+        	// border-left: 3px solid lighten($dg, 15);
+        	// padding-left: 3px;
+        }
         .intro {
             color: lighten($dg, 20);
             margin: 0;

@@ -6,42 +6,14 @@
     <title>Toronto Star</title>
     <link href='https://fonts.googleapis.com/css?family=Yeseva+One' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="http://necolas.github.io/normalize.css/3.0.2/normalize.css" />
+    <!-- <link rel="stylesheet" href="http://nec./olas.github.io/normalize.css/3.0.2/normalize.css" /> -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="styles/styles.css" />
 
     <body>
         <div class="wrapper">
-            <form>
-                <div class="wrap-input">
-                    <h2>Main header</h2>
-                    <input type="text" class="label" placeholder="Add a small label">
-                    <input type="text" class="hed" placeholder="Add a headline">
-
-                    <input type="text" class="intro" placeholder="Add an intro">
-                </div>
-
-                <div class="wrap-input col-3">
-                    <h2>Descriptive text</h2>
-
-                    <input type="text" class="txt1" placeholder="Descriptive text">
-                    <input type="text" class="txt2" placeholder="Descriptive text">
-                    <input type="text" class="txt3" placeholder="Descriptive text">
-                </div>
-
-                <div class="wrap-input">
-                    <input class="span4" placeholder="Add a number"></input>
-                    <input type="text" class="txt4" placeholder="Add a desc">
-
-                    <input class="span5" placeholder="Add a number"></input>
-                    <input type="text" class="txt5" placeholder="Add a desc">
-
-                    <input class="span6" placeholder="Add a number"></input>
-                    <input type="text" class="txt6" placeholder="Add a desc">
-                </div>
-                <button class="submit">Click to view preview</button>
-            </form>
             <section class="wrap preview" id="wrap-preview">
+                <h2>Here is an example of what you are generating:</h2>
                 <header class="cf">
                     <div class="inner-wrap">
                         <div class="img-wrap">
@@ -49,29 +21,67 @@
                         </div>
                     </div>
                     <div class="inner-wrap">
-                        <p class="intro">The starters</p>
-                        <h1>Andew Wiggins</h1>
-                        <p class="dek">With all the talent we’ve got, I believe we’re the best team.” – on the upcoming FIBA Americas competition</p>
+                        <p class="label" data-attr="label">The starters</p>
+                        <h1 class="hed" data-attr="hed">Andew Wiggins</h1>
+                        <p class="intro" data-attr="intro">With all the talent we’ve got, I believe we’re the best team.” – on the upcoming FIBA Americas competition</p>
                     </div>
                 </header>
                 <ul class="text-wrap cf">
-                    <li>Charles Barkley and Karl Malone. </li>
-                    <li>The next year at the 1984</li>
-                    <li>Canada lost the bronze-medal  </li>
+                    <li data-attr="txt1">Charles Barkley and Karl Malone. </li>
+                    <li data-attr="txt2">The next year at the 1984</li>
+                    <li data-attr="txt3">Canada lost the bronze-medal  </li>
                 </ul>
                 <ul class="text-wrap cf stats">
-                    <li><span>5% </span>the Triano, was captained</li>
-                    <li><span>21% </span>als to France, by five points</li>
-                    <li><span>$320 </span>cost of 2004 Olympics </li>
+                    <li data-attr="txt4"><span>5% </span>the Triano, was captained</li>
+                    <li data-attr="txt5"><span>21% </span>als to France, by five points</li>
+                    <li data-attr="txt6"><span>$320 </span>cost of 2004 Olympics </li>
                 </ul>
             </section>
+            <!-- ===================================================================================================== -->
+            <form>
+                <div class="wrap-input cf">
+                    <h2>Main header</h2>
+                    <input type="text" class="label" placeholder="Click to add a small label">
+                    <input type="text" class="hed" placeholder="Click to add a headline">
+                    <input type="text" class="intro" placeholder="Click to add an intro">
+
+                    <!-- <button class="next">Next &#8594;</button> -->
+                </div>
+
+                <div class="wrap-input cf col-3">
+                    <h2>Descriptive text</h2>
+
+                    <input type="text" class="txt1" placeholder="Descriptive text">
+                    <input type="text" class="txt2" placeholder="Descriptive text">
+                    <input type="text" class="txt3" placeholder="Descriptive text">
+                </div>
+
+                <div class="wrap-input cf col-3">
+                    <h2>Stas + explainers</h2>
+
+                    <input class="span4" placeholder="Click to add a number"></input>
+                    <input type="text" class="txt4" placeholder="Click to add a desc">
+
+                    <input class="span5" placeholder="Click to add a number"></input>
+                    <input type="text" class="txt5" placeholder="Click to add a desc">
+
+                    <input class="span6" placeholder="Click to add a number"></input>
+                    <input type="text" class="txt6" placeholder="Click to add a desc">
+                </div>
+                <button class="submit">Click to view preview</button>
+            </form>
+
             <section class="wrap generated-card" id="generated-card-output"></section>
             <section class="output">
-                <button class="compile">compile</button>
+                <button class="compile" data-clipboard-target="#iframe">compile</button>
             </section>
+
+
+
             <section class="iframe"></section>
         </div>
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script src="https://cdn.rawgit.com/zenorocha/clipboard.js/master/dist/clipboard.min.js"></script>
         <script src="scripts/vendor/dropzone.js"></script>
         <script src="scripts/js.js"></script>
     </body>

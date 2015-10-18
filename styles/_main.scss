@@ -1,9 +1,8 @@
 // --------------------------- global CSS
-
 * {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -11,11 +10,11 @@ body {
 }
 
 img {
-	max-width: 100%;
+    max-width: 100%;
 }
 
 .wrapper {
-   	width: 100%;
+    width: 100%;
     padding: 3px;
     width: 540px;
     display: block;
@@ -23,7 +22,12 @@ img {
 }
 
 .cf:after {
-  content: "";
-  display: table;
-  clear: both;
+    content: "";
+    display: table;
+    clear: both;
+}
+
+h2 {
+    background: yellow;
+    margin-bottom: $p;
 }
