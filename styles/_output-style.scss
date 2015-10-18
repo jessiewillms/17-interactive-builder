@@ -1,49 +1,5 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box; }
 
-body {
-  font-family: "Roboto", Arial, sans-serif; }
 
-img {
-  max-width: 100%; }
-
-.wrapper {
-  width: 100%;
-  padding: 3px;
-  width: 540px;
-  display: block;
-  margin: 20px auto; }
-
-.cf:after {
-  content: "";
-  display: table;
-  clear: both; }
-
-.wrap-input input:not(.col-3) {
-  display: block;
-  width: 100%;
-  margin: 10px 0;
-  padding: 3px;
-  color: #a1a1a1; }
-
-.wrap-input.col-3 input {
-  width: 30%;
-  float: left;
-  margin-right: 1%; }
-
-section {
-  padding: 10px;
-  border: 1px solid #eee; }
-
-img {
-  max-width: 100px; }
-
-.submit {
-  width: 100%;
-  display: block;
-  margin: 10px 0; }
 
 .wrap {
   width: 100%;

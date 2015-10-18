@@ -1,23 +1,23 @@
-.wrap-input {
-    margin: 5px 0;
-}
+.wrap-input input:not(.col-3) {
+  display: block;
+  width: 100%;
+  margin: 10px 0;
+  padding: 3px;
+  color: #a1a1a1; }
+
+.wrap-input.col-3 input {
+  width: 30%;
+  float: left;
+  margin-right: 1%; }
 
 section {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #eee;
-}
+  padding: 10px;
+  border: 1px solid #eee; }
 
 img {
-    max-width: 100px;
-}
-.submit {
-    width: 100%;
-    display: block;
-}
+  max-width: 100px; }
 
-.iframe {
-	width: 100%;
-	background: lighten($lg, 35);
-	margin: 5px 0;
-}
+.submit {
+  width: 100%;
+  display: block;
+  margin: 10px 0; }
