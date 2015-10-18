@@ -6,12 +6,11 @@ app.init = function() {
     $('.wrap-input:nth-of-type(1)').fadeIn();
 
     $('input').focus(function(){
-		$('.inner-wrap, .text-wrap').children().removeClass('match');
-		var getInputClass = $(this).attr('data-attr');
+		$('.inner-wrap, .text-wrap, li, span').children().removeClass('match');
+		var getInputClass = $(this).attr('class');
         console.log(getInputClass)
-
 		$('.inner-wrap  > *, .text-wrap > *').each(function () {
-		    var getCurrentClass = $(this).attr('data-attr');
+		    var getCurrentClass = $(this).attr('class');
 
 		    if (getInputClass == getCurrentClass) {
 		    	$(this).addClass('match').css('opacity','1');
