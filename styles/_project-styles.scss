@@ -9,12 +9,19 @@
     // 	padding: 3px;
     // 	height: 50px;
     // }
-    input {
+    input:not(.col-3) {
     	display: block;
     	width: 100%;
     	margin: 10px 0;
     	padding: 3px;
     	color: $g;
+    }
+    &.col-3 {
+    	input {
+    		width: 30%;
+    		float: left;
+    		margin-right: 1%;
+    	}
     }
 }
 
