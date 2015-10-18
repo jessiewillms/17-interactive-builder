@@ -20,13 +20,17 @@ app.init = function() {
 
 		txt4 = '<li>' + $('.txt4').val() + '</li>',
 		txt5 = '<li>' + $('.txt5').val() + '</li>',
-		txt6 = '<li>' + $('.txt6').val() + '</li>';
+		txt6 = '<li>' + $('.txt6').val() + '</li>'
+
+		span4 = '<span>' + $('.span4').val() + '</span>',
+		span5 = '<span>' + $('.span5').val() + '</span>',
+		span6 = '<span>' + $('.span6').val() + '</span>';
 
 		var header = '<header class="cf"><div class="inner-wrap"><div class="img-wrap"> <img src="images/jays.jpg" alt=""> </div></div><div class="inner-wrap">' + hed + intro + dek + '</div></header>';
 
 		var ul = '<ul class="text-wrap cf">' + txt1 + txt2 + txt3 + '</ul>';
 
-		var ul_2 = '<ul class="text-wrap cf">' + txt4 + txt5 + txt6 + '</ul>';
+		var ul_2 = '<ul class="text-wrap cf">' + span4 + txt4 + span5 + txt5 + span6 + txt6 + '</ul>';
 
 
 		//compiles inputs to 
